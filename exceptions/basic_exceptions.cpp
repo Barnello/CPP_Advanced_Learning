@@ -3,14 +3,14 @@
 using namespace std; 
 
 void somethingWentWrong(){
-    int error = 1;
+    int error = 0;
     int error2 = 1;
 
     if(error){
-        throw "somthing went wrong";
+        throw "something went wrong";
     }
     if(error2){
-        throw string("sokmthing went wrong again")
+        throw string("something went wrong again");
     }
 }
 
@@ -18,8 +18,14 @@ int main(){
     try{
         somethingWentWrong();
     }
-    catch(char const* e){
-        cout << "Error code: " << e << endl;
+    catch(int e){
+        cout << "Error int: " << e << endl;
+    }
+    catch(char const* &e){
+        cout << "Error message: " << e << endl;
+    }
+    catch(string &e){
+        cout << "Error message: " << e << endl;
     }
 
     cout << "The program is still running" << endl;

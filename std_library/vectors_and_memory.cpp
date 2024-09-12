@@ -7,7 +7,12 @@ int main(){
 
     vector<double> nums;
 
-    cout << nums.size() << endl;
+    cout << "Size" << nums.size() << endl;
+
+    int capacity = nums.capacity();
+    cout << "Capacity: " << capacity << endl;
+
+    for (int i =)
 
     return 0;
 }

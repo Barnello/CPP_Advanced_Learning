@@ -46,5 +46,9 @@ int main(){
     tests.insert(Test(20, "somethign1"));
     tests.insert(Test(30, "somethign3"));
 
+    for(set<Test>::iterator it = tests.begin(); it != tests.end(); it++){
+        it->print();
+    }
+
     return 0;
 }

@@ -20,6 +20,9 @@ namespace numberProgramming{
     };
 
     ostream &operator<<(ostream &out, const Complex &c);
+    Complex operator+(double d, const Complex &c);
+    Complex operator+(const Complex &c,double d);
+    Complex operator+(const Complex &c, const Complex &d);
 }
 
 #endif

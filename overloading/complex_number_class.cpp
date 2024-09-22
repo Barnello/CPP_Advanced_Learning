@@ -17,5 +17,9 @@ int main(){
 
     cout << "This is now C2 " << c2 << endl;
 
+    cout << endl;
+
+    cout << "Adding test for complex numbers" << c1 + c2 + 22 << endl;
+
     return 0;
 }

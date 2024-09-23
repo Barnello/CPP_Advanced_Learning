@@ -4,6 +4,7 @@ namespace numberProgramming{
     ostream &operator<<(ostream &out, const Complex &c){
         out << "(" << c.getReal() << "," << c.getImaginary() << ")";
         return out;
+        //cout << c1 << endl; 
     }
 
     Complex operator+(double d, const Complex &c){

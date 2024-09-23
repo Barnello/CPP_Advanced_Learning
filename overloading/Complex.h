@@ -17,6 +17,8 @@ namespace numberProgramming{
             const Complex &operator=(const Complex &other);
             double getReal() const{return real;}
             double getImaginary() const {return imaginary;}
+            bool operator==(const Complex &c) const;
+            bool operator!=(const Complex &c) const;    
     };
 
     ostream &operator<<(ostream &out, const Complex &c);

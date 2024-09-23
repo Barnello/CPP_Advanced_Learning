@@ -17,6 +17,14 @@ namespace numberProgramming{
         return Complex(d.getReal() + c.getReal(), d.getImaginary() + c.getImaginary());
     }
 
+    bool Complex::operator==(const Complex &c) const{
+        return ((real == c.getReal()) && (imaginary == c.getImaginary()));
+    }
+
+    bool Complex::operator!=(const Complex &c) const{
+        return !(*this==c);
+    }
+    
 
     Complex::Complex(): real(0), imaginary(0){
 
